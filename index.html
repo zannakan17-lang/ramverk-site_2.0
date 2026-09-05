@@ -4,142 +4,94 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>РАМВЕРК инжиниринг</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&subset=cyrillic" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="#top">РАМВЕРК <span>инжиниринг</span></a>
-    <nav>
-      <a href="#about">О компании</a>
-      <a href="#services">Услуги</a>
-      <a href="#projects">Проекты</a>
-      <a href="#contacts">Контакты</a>
-    </nav>
-    <a class="nav-phone" href="tel:+78123334455">+7 (812) 333-44-55</a>
-    <button class="menu-btn" aria-label="Открыть меню">☰</button>
-  </div>
-</header>
-
-<main id="top">
-<section class="hero hero-forest">
-  <div class="hero-overlay"></div>
-  <div class="container hero-inner">
-    <p class="eyebrow">Частное строительство</p>
-    <h1>Дом, который растёт<br>вместе с вами</h1>
-    <p class="hero-text">Проектируем и строим загородные дома из дерева и камня — от идеи до готового объекта.</p>
-    <a class="btn btn-light" href="#contacts">Обсудить проект <span>→</span></a>
-  </div>
-</section>
-
-<section class="intro" id="about">
-  <div class="container intro-grid">
-    <div>
-      <p class="eyebrow">РАМВЕРК инжиниринг</p>
-      <h2>Строим надолго.<br>Проектируем с умом.</h2>
-    </div>
-    <div class="intro-copy">
-      <p>Мы — инженерно-строительная компания полного цикла. Работаем с частными заказчиками и девелоперами, создавая дома, в которых архитектура, инженерия и материалы работают как единое целое.</p>
-      <p>Собственная команда архитекторов и инженеров позволяет контролировать каждый этап — от эскиза до сдачи объекта.</p>
+<div class="wrap">
+  <div class="topbar">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA6cAAAEpCAYAAABvOVTxAADG/0lEQVR42uydeZycVZX3f+6e+1Qv6SSEJcomirg1iqNNeu9UgqDgvlVeddyXRBRx33WKGnVGcZRhVJS4jaOOmmdEx3FBQUORzgqtjkocFQIoa0AgW3dXPfee8/5RT4UGIaSrn+ot5+unjEKq6qm7nt89555DmEkEBIJ8SqTtP0tv+eOuP99+HBEJAJrUx4gkrq018mOV8679yrpS1+rV0cjatclkPqO4fr0rrVzp33Dlf765Y9GiT1f37vMA3CSfA9Y57B3bt/uOXbvajTVORCbdLESEkHhc+7OtCIkHEdVaRFCB4CICjYsRgkhFGJ9DNVdZfFwCGvnE2l0P8FC0emTE3b1jB8eFAqPWvoqiKIqiKIqiKLMKp00wR6hJyhbTEr0dIBiqiWGuJG+T1qrfc3cwJ722sNlYs1WEPe1zaw/rfWx1G9HutUAyUYQDwHkrVgRSoaooiqIoiqIoiopTpRFCNfF1sUoEIkuLCQbCApuLnknOPRMi8GH8/Xv/sINf/cMv/fTIRx37+/G79m4ZpV3DpcGVewCglH7e6osvjtauXu1BdK8EVhRFURRFURRFUXGqHAiq91ka+CwsUteUnHiWasIAkXGmw1cqYp19oYsiC0doCwvvPGfTui8zy+62hx/2pU+d9Iyda9esSbBmDQCgsG6d1dBfRVEURVEURVFmAqNNMB/06v6XJaKICE5YBEReRHaP/vXuhJMExtojWxd1vLd14YKPJXft23HOxnU/O/vKdR981/XrHw4A8apVAURSXL/eiQhp0yqKIiiKoiiKoswU6jmd/6IVgohEYO9l7O49XkjIkFng2lpPyFlzRnLnve9928j3t/jR5II9fu/m0sqV95QAgAiF73zHxqtWBW1ORVEURVEURVGUmog6p0eUCJ4REEHIQJAb+Wz2u73qOel92j2Kc+/fP96xde1a3vI60mCz1qR9lVJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFLKhP8HLrNhIp4TQyAAAAAASUVORK5CYII=" alt="RamFJORD logo">
+    <div class="toggle liquid-glass" style="border-radius:999px">
+      <button data-theme="forest" class="active">Лес</button>
+      <button data-theme="concrete">Бетон</button>
     </div>
   </div>
-</section>
 
-<section class="split-section forest-section" id="services">
-  <div class="split-image forest-image"></div>
-  <div class="split-content">
-    <p class="eyebrow">01 / Дерево</p>
-    <h2>Тёплые дома<br>из натурального материала</h2>
-    <p>Клеёный брус, каркасные и комбинированные решения. Подбираем конструкцию под участок, климат и сценарий жизни.</p>
-    <ul class="feature-list">
-      <li>Архитектурное проектирование</li>
-      <li>Производство домокомплектов</li>
-      <li>Монтаж и инженерные системы</li>
-    </ul>
-    <a class="text-link" href="#projects">Смотреть проекты <span>→</span></a>
+  <div class="hero">
+    <div class="hero-content">
+      <p class="eyebrow" id="hero-eyebrow">Частное строительство</p>
+      <h1 id="hero-title">Дом, который растёт вместе с <span class="hero-word" id="hero-word">лесом</span> вокруг</h1>
+      <p class="sub hero-fade" id="hero-sub">Премиальное деревянное домостроение и рекреационные объекты под ключ.</p>
+      <button class="cta magnetic hero-fade" id="hero-cta" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth', block:'start'})">Обсудить проект <i class="ti ti-arrow-right"></i></button>
+    </div>
+    <i class="ti ti-chevron-down scroll-indicator" id="scroll-indicator"></i>
   </div>
-</section>
 
-<section class="split-section concrete-section">
-  <div class="split-content">
-    <p class="eyebrow">02 / Камень</p>
-    <h2>Монолитные дома<br>с характером</h2>
-    <p>Монолит, кирпич и натуральный камень. Чистая геометрия, сложные объёмы и инженерные решения без компромиссов.</p>
-    <ul class="feature-list">
-      <li>Индивидуальное проектирование</li>
-      <li>Монолитные и каменные конструкции</li>
-      <li>Фасады и благоустройство</li>
-    </ul>
-    <a class="text-link" href="#projects">Смотреть проекты <span>→</span></a>
+  <div class="section">
+    <div class="card card-accent">
+      <div class="section-label">О нас</div>
+      <p class="about-text" id="about-text">Мы не строим быстро и в ущерб качеству. Каждый проект индивидуален — это природный или лесной массив, водный объект, прибрежная линия, которые нельзя воссоздать заново, если ошибиться. Поэтому мы работаем с <b>хирургической точностью</b> и особым вниманием к деталям: просчитываем заранее все варианты, проверяем возможность их безболезненной адаптации на местности и доводим реализацию до логического конца, <b>без каких-либо компромиссных вариантов</b>.</p>
+    </div>
   </div>
-  <div class="split-image concrete-image"></div>
-</section>
 
-<section class="projects" id="projects">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Избранные проекты</p>
-        <h2>Архитектура,<br>которой хочется касаться</h2>
+  <div class="section">
+    <div class="big-photo"></div>
+  </div>
+
+  <div class="section">
+    <div class="card">
+      <div class="section-label">РАМВЕРК инжиниринг в цифрах</div>
+      <div class="stats">
+        <div class="stat" data-breakdown="Резиденции 40 000 · Курорты 35 000 · Промышленные 15 000"><p class="num" data-target="90000">0</p><p class="label">м² построено</p></div>
+        <div class="stat" data-breakdown="Резиденции 55 · Курорты 30 · Промышленные 15"><p class="num" data-target="100">0</p><p class="label">объектов</p></div>
+        <div class="stat" data-breakdown="Россия · Узбекистан · Беларусь · Армения"><p class="num" data-target="4">0</p><p class="label">страны</p></div>
+        <div class="stat" data-breakdown="В работе 120 000 · В стадии проекта 180 000"><p class="num" data-target="300000">0</p><p class="label">м² спроектировано</p></div>
       </div>
-      <p class="section-note">Каждый объект начинается с контекста: участка, ландшафта и образа жизни заказчика.</p>
-    </div>
-    <div class="project-grid">
-      <article class="project-card project-large">
-        <img src="images/forest/B0042895.jpg" alt="Загородный дом в лесу" loading="lazy">
-        <div class="project-meta"><span>Дом в лесу</span><span>2024</span></div>
-      </article>
-      <article class="project-card">
-        <img src="images/concrete/05.jpg" alt="Каменный дом" loading="lazy">
-        <div class="project-meta"><span>Бадаевское</span><span>2023</span></div>
-      </article>
-      <article class="project-card">
-        <img src="images/forest/DSC03469.jpg" alt="Деревянный дом" loading="lazy">
-        <div class="project-meta"><span>Ленинградская область</span><span>2024</span></div>
-      </article>
-      <article class="project-card project-large">
-        <img src="images/concrete/G_03.jpg" alt="Современный каменный дом" loading="lazy">
-        <div class="project-meta"><span>Шушары</span><span>2022</span></div>
-      </article>
     </div>
   </div>
-</section>
 
-<section class="numbers">
-  <div class="container numbers-grid">
-    <div><strong>12</strong><span>лет в строительстве</span></div>
-    <div><strong>86</strong><span>реализованных объектов</span></div>
-    <div><strong>24</strong><span>специалиста в команде</span></div>
-    <div><strong>100%</strong><span>контроль качества</span></div>
-  </div>
-</section>
-
-<section class="contact-section" id="contacts">
-  <div class="container contact-grid">
-    <div>
-      <p class="eyebrow">Давайте знакомиться</p>
-      <h2>Есть участок?<br>Есть идея?<br>Давайте строить.</h2>
+  <div class="section">
+    <div class="card">
+      <div class="section-label">Этапы реализации проекта премиум класса</div>
+      <div class="stages" id="stages"></div>
+      <div class="stage-body">
+        <div class="stage-path"><div class="stage-path-fill" id="stage-path-fill"></div></div>
+        <span class="stage-num" id="stage-num"></span>
+        <i id="stage-icon" class="ti stage-icon-big"></i>
+        <span class="stage-desc" id="stage-text"></span>
+      </div>
     </div>
-    <form class="contact-form">
-      <label>Ваше имя<input type="text" placeholder="Как к вам обращаться?"></label>
-      <label>Телефон<input type="tel" placeholder="+7 (___) ___-__-__"></label>
-      <label>Расскажите о проекте<textarea rows="4" placeholder="Площадь, участок, сроки — всё, что уже известно"></textarea></label>
-      <button class="btn btn-dark" type="submit">Отправить заявку <span>→</span></button>
-      <small>Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</small>
-    </form>
   </div>
-</section>
-</main>
 
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="brand">РАМВЕРК <span>инжиниринг</span></div>
-    <div><a href="tel:+78123334455">+7 (812) 333-44-55</a><a href="mailto:hello@ramverk.ru">hello@ramverk.ru</a></div>
-    <div>Санкт-Петербург<br>и Ленинградская область</div>
-    <div>© 2026 РАМВЕРК инжиниринг</div>
+  <div class="section">
+    <div class="card">
+      <div class="section-label">Наши объекты</div>
+      <div class="carousel">
+        <div class="carousel-track" id="carousel-track"></div>
+        <div class="carousel-zone left" id="carousel-zone-left"></div>
+        <div class="carousel-zone right" id="carousel-zone-right"></div>
+      </div>
+      <div class="carousel-dots" id="carousel-dots"></div>
+    </div>
   </div>
-</footer>
+
+  <div class="section" id="contacts">
+    <div class="card">
+      <div class="section-label">Контакты</div>
+      <div class="contacts">
+        <a class="contact-card" href="tel:+78125651880"><i class="ti ti-phone"></i>+7 (812) 565-18-80</a>
+        <a class="contact-card" href="mailto:info@ramfjord.ru"><i class="ti ti-mail"></i>info@ramfjord.ru</a>
+        <a class="contact-card" href="#"><i class="ti ti-map-pin"></i><span>г. Санкт-Петербург,<br>БЦ Office L27<br>Львовская ул., 27, офис 1403</span></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="cursor-dot"></div>
+<div id="cursor-outline"></div>
+
 <script src="script.js"></script>
 </body>
 </html>
